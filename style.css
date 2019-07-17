@@ -1,0 +1,374 @@
+body {
+    font-family : Verdana, Georgia, serif;   
+	font-size: 14px;
+	background-color: #e5e4d7;
+	box-shadow: inset 0 0 50px #777777;	
+}
+
+#heading{
+	text-align: center;
+	color: white;
+	font-size: 150%;
+	font-family : Arial;
+	border-style: inset;
+	
+background: linear-gradient(to right, #19ab3b, #648880, #293f50); 
+
+}
+
+#contactdetails{
+	position: relative;
+	top: 10px;
+	left: 300px;
+}
+
+#header{
+	background-color: #5c755e;
+	margin: 10px;
+	height: 90px;
+	border-radius: 5px;
+	text-shadow: 10px 10px 10px black;
+	background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+}
+#hyperlink{
+	color: darkblue;
+	font-size: 22px;
+	text-decoration: underline;
+}
+#contact{
+	position: absolute;
+	top: 300px;
+	left: 550px;
+	width: 260px;
+}
+#diet{
+	margin-right: 10px;
+}
+#map{
+	margin-right: 10px;
+}
+#navbar {
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+	background-color: #000;
+	margin: 10px;
+	border-radius: 5px;
+}
+#simpleform{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#sprints{
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin-right: 45px;
+}
+.item1{
+	padding: 15px;
+	display: inline;
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+	font-family : Verdana, Georgia, serif;
+	color: white;
+}
+a:hover{
+	color: red;
+}
+#hyperlink:hover{
+	color: red;
+}
+
+#icons{
+	color: #000;
+}
+
+#icons:hover{
+	color: red;
+}
+
+.colomn1of3, .colomn2of3, .colomn3of3{
+	background-color: #e5e4d7;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 110%;
+	word-wrap: break-word;
+	
+	
+	float: left;
+	width: 280px;
+	margin: 8px;
+	
+}
+th{
+	background-color: #ccddee; 
+}
+tr:nth-child(2n){
+	background: cyan;
+}
+td{
+	font-family : Arial;
+}
+
+.main{
+	background-color: #e5e4d7;
+	margin-left: 10px;
+	margin-right: 320px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 110%;
+	word-wrap: break-word;
+	
+	
+}
+.sidebar{
+	background-color: #e5e4d7;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 105%;
+	float: right;
+	width: 255px;
+	clear: right;
+	
+	border-style: dashed;
+}
+
+h1{
+	font-size: 150%;
+	color: #ce282e;
+	font-family: Arial;
+}
+
+
+
+.imagesidebar{
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	float: right;
+	width: 300px;
+	clear: right;
+	height: 220px;
+	
+}
+
+.imagesidebar:hover{
+	opacity: 0.4;
+}
+
+#footer{
+	background-color: #5c755e;
+	margin: 10px;
+	height: 60px;
+	clear: both;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-size: 90%;
+}
+
+
+h2{	
+	font-size: 120%;
+	color: darkblue;
+}
+header{
+	font-size: 250%;
+	text-align: center;
+	color: white;
+	margin: 0px;
+	font-family: Arial;
+	position: relative;
+	top: 30%
+	
+	
+}
+#facebook, #twitter, #linkedin{
+	width: 40px;
+}
+#Sprints{
+	max-width:100%;
+	max-height:100%;
+	
+}
+#footer{
+	background-color: black;
+}
+#animation{
+	width: 150px;
+	height: 200px;
+	float: right;
+	margin-left: 500px;
+	margin-top: 230px;
+	position: absolute;
+	background-color: red;
+	animation-name: example1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	text-align: center;
+	
+}
+@keyframes example1{
+	
+0% {background-color: red; left: 0px; top: 0px;}
+25% {background-color: yellow; left: 200px; top: 0px;}
+50% {background-color: blue; left: 200px; top: 200px;}
+75% {background-color: green; left: 0px; top: 200px;}
+100% {background-color: red; left: 0px; top: 0px;}
+
+}
+
+address{
+text-align: right;
+}
+
+.flip3D{
+	width: 240px;
+	height: 200px;
+	margin: 40px;
+	float: left;
+}
+.front{
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #FC0;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+	font-family : Arial, Verdana, sans-serif;
+	
+}
+.back{
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+	
+}
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+.transitiontext{
+	text-align: center;
+}
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 580px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+form div + div {
+  margin-top: 1em;
+}
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 150px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+.label_errors{
+	width: 200px;
+}
+
+/*styles for mobile devices*/
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+    margin: 0px;
+    padding: 0px;
+  }
+  .sidebar, .main, .footer{	  
+	  float: left;
+	  width:100%;
+	  margin: 0 auto;
+  }
+  #clickhere{
+	  margin: 0 auto;
+  }
+  form{
+	  margin: 0 auto;
+  }
+  li{
+	  font-size:10px;
+  }
+  table{
+	  margin: 0 auto;
+  }
+  p{
+	  font-size: 15px;
+  }
+  .item1{
+
+	display: block;
+	font-size: 25px;
+  }
+  
+}

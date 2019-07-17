@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Contact</title>
+     <meta http-equip="Content-Type" content="text/html; charset=ytf-8"/>
+     <link rel="stylesheet" type="text/css" href="style.css" /> 
+  </head>
+  <body>
+        <div id="container">
+		 <div id="header">
+		   <header>
+		      Rickys B-fit website
+		 		   
+		 </div>
+	    
+		<nav>
+		    <ul id="navbar">
+		      <li class="item1"><a href="index.html">Home</a></li>
+			  <li class="item1"><a href="exercises.html">Exercises</a></li>
+			  <li class="item1"><a href="features.html">Features</a></li>
+			  <li class="item1"><a href="contact.html">Contact</a></li>
+		    </ul>
+		   </nav>
+		
+		</header>
+		<aside>
+		<div class="sidebar">
+		   <h2>Social Media Icons</h2>
+		
+		      <a id="icons" href= "https://www.facebook.com/" alt="facebook" target="_blank"><p>Facebook</p></a>
+		      <a id="icons" href= "https://twitter.com/" alt="twitter" target="_blank"><p>Twitter</p></a>
+		      <a id="icons" href= "https://www.linkedin.com/nhome" alt="linkedin" target="_blank"><p>Linked in</p></a>
+		
+		      <img id="facebook" src="Images/Facebook.jpg"/>
+		      <img id="twitter" src="Images/Twitter.png"/>
+		      <img id="linkedin" src="Images/linkedin.jpg"/>
+		
+		
+		</div>
+		
+		
+		<div class="sidebar">
+		  <h2>Motivational Quote</h2>
+			    <q>Eat right, Exercise, Be kind, Sleep well, Repeat</q>
+		</div>
+		
+		<div>
+		     <img class="imagesidebar" src="Images/dumbells.jpg">
+		</div>
+        
+		
+		<div class="sidebar">
+		  		    
+		   <table border="1">
+			<tr>
+			   <th></th>
+			   <th colspan="3">Opening/Closing times</th>
+			</tr>
+			<tr>
+			   <th>MON</th>
+			   <td>8:00AM-8:00PM</td>
+			</tr> 
+			<tr>
+			   <th>TUES</th>
+			   <td>8:00AM-8:00PM</td>
+			</tr>
+			<tr>
+			   <th>WED</th>
+			   <td>8:00AM-5:00PM</td>		
+			<tr>
+			   <th>THURS</th>
+			   <td>8:00AM-8:00PM</td>		
+			</tr>
+			<tr>
+			   <th>FRID</th>
+			   <td>8:00AM-8:00PM</td>		
+			</tr>
+			<tr>
+			   <th>SAT</th>
+			   <td>8:00AM-5:00PM</td>		
+			</tr>
+			<tr>
+			   <th>SUN</th>
+			   <td><b>Closed</b></td>		
+			</tr>
+			
+			</table> 
+			</div>
+		</aside>
+
+        <!--This is the main class and defines the contact page.-->
+		<div class="main" align="left" >
+		       <h1 id="heading">Contact Form</h1>
+			   <div id="animation">
+				  <p>
+				    <b>
+					  Come and Join us at B-Fit!
+					  Get Fit, Get Ready and Go!
+					   <img id="Sprints" src="Images/sprints.png" alt="Diet Logo" align="left" title="Diet image">
+		  
+					</b>
+				  </p>
+				</div>
+			        <!--This is a Form that allows for user input and to post it.-->
+		           <h1>Contact Me</h1>
+			   
+			    <form action="mailto:richard-jones96@hotmail.co.uk" enctype="text/plain" method="post" onsubmit="return validate_form(this);">
+					<div>
+						<label for="Name">Name:</label>
+						<input name="Name" type="text" id="Name">*
+						<label id="name_error" class="label_errors">
+					</div>
+					<div>
+						<label for="Age">Age:</label>
+						<input name="Age" type="text" id="Age">*
+						<label id="age_error" class="label_errors">
+					</div>
+					<div>
+						<label for="Email">E-mail:</label>
+						<input name="Email" type="text" id="Email">*
+						<label id="email_error" class="label_errors">
+					</div>
+					<div>
+						<label for="Check">Athletic Ability?</label>
+					    <input type="radio" name="ability" value="beginner" checked="checked" />Beginner
+					    <input type="radio" name="ability" value="medium" />Medium
+					    <input type="radio" name="ability" value="expert" />Advanced
+					</div>
+					<div>
+					    <label id="musclelbl">Your Muscle Target(s)?</label>
+                        <input type="checkbox" name="muscles" value="chest" />Chest
+					    <input type="checkbox" name="muscles" value="back" />Back
+					    <input type="checkbox" name="muscles" value="legs" />Legs
+					    <input type="checkbox" name="muscles" value="arms" />Arms
+					    <input type="checkbox" name="muscles" value="abdominals" />Abdominals
+                    </div>						
+					<div>
+						<label for="Comment">Comment:</label>
+						<textarea name="Comment" id="Comment" placeholder="Enter your Message..."></textarea>
+					</div>
+					
+					<button type="submit" onclick="validate(Age)" name="Submit" value="Submit">Submit</button>
+					<button type="reset" name="reset" value="Reset">Reset</button>
+				</form>
+            
+		   
+		   </header>
+		 </section>
+		 
+		 
+		 <script>
+		 function validate_form(thisform){
+			//var email_error = document.getElementById("email_error");
+					
+			with (thisform){
+			   if(Name.value == ""){
+				   Name.focus();
+				   document.getElementById("name_error").innerHTML = "Please insert your Name.";
+				   return false;
+				}
+                else{
+                    document.getElementById("name_error").innerHTML = "";
+				}
+               if(Name.value.length < 3){
+				  Name.focus();
+				  document.getElementById("name_error").innerHTML = "Insert Name more than 2 characters.";
+				  return false;
+			   }
+			   else{
+                    document.getElementById("name_error").innerHTML = "";
+				}					
+			   if(Age.value == ""){
+				   Age.focus();
+				   document.getElementById("age_error").innerHTML = "Please insert your Age.";
+				   return false;
+				   }
+				   else{
+                      document.getElementById("age_error").innerHTML = "";
+					}				   
+			   if(Age.value < 18){
+			       Age.focus();
+				   document.getElementById("age_error").innerHTML = "You must be over 18 to use this.";
+				   return false;
+			   }
+			    else{
+                      document.getElementById("age_error").innerHTML = "";
+					}	
+			   
+			    if(Email.value == ""){
+				   Email.focus();
+				   document.getElementById("email_error").innerHTML = "Please insert your email.";
+				   return false;
+				}
+                else{
+                    document.getElementById("email_error").innerHTML = "";
+				}
+				
+				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+				if (!filter.test(Email.value)) {
+				  Email.style.borderColor = '#FF0000';
+				  document.getElementById("email_error").innerHTML = "Invalid E-mail Address";
+				  Email.focus();
+				  return false;
+				}
+				else{
+                    document.getElementById("email_error").innerHTML = "";
+				}
+			   			   
+			   if(validate(Age) == false){
+			      return false;
+			   }
+			 }
+			}
+									
+			function validate(x) {
+			   if (isNaN(x.value)){
+			       x.value += " is not a number";
+				   x.style.borderColor = '#ff0000';
+				   x.style.boxShadow = "1px 1px 3px 3px black";
+				   return false;
+				}
+			}			
+			
+		 </script>
+		 
+		 
+					
+		
+		</div>
+		
+		<div class="main">
+		  <h1>Map</h1>
+           <!--This is an iframe. This defines the specific location of Rickys B-fit gym
+		   elements such as width, height, frameborder are customized-->
+		   
+		   <iframe id="map" align="left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.9271709780555!2d-2.250659784626604!3d53.505496370480095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb03143b2c499%3A0xf850ebfef53a1267!2s33+Marlborough+Rd%2C+Salford+M7+4ST!5e0!3m2!1sen!2suk!4v1477230893721" 
+			 width="300" height="270" frameborder="0" title="Map" style="border:0" allowfullscreen></iframe>
+		   
+		
+		     <address>
+		   <p>
+		   <h3>Address:</h3>
+	       33 Marlborough Rd
+		   Salford, irlam, Manchester, M44 6HH
+		   <h3>Phone:</h3>(07) 5438 4888
+		   <h3>Fax:</h3>(07) 4567 7896
+		   <h3>Email:</h3> richard-jones96@hotmail.co.uk
+		   </address>
+		</div>
+		<footer>
+		<div id="footer">
+	       <p>
+	         Copyright &copy; 2016 My website
+	       </p>
+		   
+		</div>
+		</footer>
+		</div>
+  </body>
+ </html>
